@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <style>
+        /* Default height for small devices */
+        #intro {
+          height: 600px;
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 58px;
+        }
+        @media (max-width: 991px) {
+                #intro {
+                /* Margin to fix overlapping fixed navbar */
+                margin-top: 45px;
+            }
+        }
+      </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +23,19 @@
     <title>Register Page</title>
 </head>
 <body>
+
+<div id="intro" class="p-5 text-center bg-image shadow-1-strong"
+      style="background-image: url('https://mdbootstrap.com/img/new/slides/205.jpg');">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white px-4">
+                <h1 class="mb-3">Coming Soon!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <h1>Register Page</h1>
     <a href="{{url_for('login')}}">Already have an account? Login Page</a><br>
 </body>

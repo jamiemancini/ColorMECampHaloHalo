@@ -1,7 +1,7 @@
 from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 
-db = SQLALchemy()
+# db = SQLALchemy()
 
 def connect_to_db(app):
     """Connect to the database"""
